@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Pizza Shop</h1>
+        <p>Order your favorite pizza now!</p>
+    </header>
+    <main>
+        <form action="order.php" method="post">
+            <h2>Order Your Pizza</h2>
+            <label for="pizza-size">Select Pizza Size:</label>
+            <select id="pizza-size" name="pizza-size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <br>
+            <label for="toppings">Select Toppings:</label><br>
+            <input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+            <input type="checkbox" id="sausage" name="toppings[]" value="sausage">
+            <label for="sausage">Sausage</label><br>
+            <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+            <input type="checkbox" id="olives" name="toppings[]" value="olives">
+            <label for="olives">Olives</label><br>
+            <br>
+            <label>Cheese</label>
+                        <br>
+                        <input type="radio" id="light" name="c1" value="Light">
+                        <label for="light">Light</label>
+                        
+                        <input type="radio" id="normal" name="c1" value="Normal">
+                        <label for="normal">Normal</label>
+                        
+                        <input type="radio" id="double" name="c1" value="Double">
+                        <label for="double">Double</label>
+                        <br>
+            <label for="delivery">Delivery Address (Optional):</label><br>
+            <input type="text" id="delivery" name="delivery-address">
+            <br>
+            <input type="submit" value="Place Order">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pizza Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
